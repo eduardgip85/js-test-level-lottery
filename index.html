@@ -1,1 +1,31 @@
-<!-- TODO: UI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria!</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    
+    <main class="container">
+        <h1>Lotería (1 al 10)</h1>
+
+        <section class="card">
+                <label for="userNumber">Tu número (1-10)</label>
+                <input id="userNumber" type="text" inputmode="numeric" placeholder="Ej: 7" />
+                <button id="playBtn">Procesar jugada</button>
+
+                <p id="feedback" class="feedback" aria-live="polite"></p>
+        </section>
+
+        <section class="card">
+            <h2 id="heroHistory">Historial</h2>
+            <ul id="history"></ul>
+        </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+
+</body>
+</html>
